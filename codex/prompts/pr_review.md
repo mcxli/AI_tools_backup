@@ -1,4 +1,4 @@
-## $ARGUMENTSの番号のプルリクエストをレビューする
-- プルリクエストのデータ取得にはghコマンドを使用する
-- gh がインストールされていない場合は有無を確認し、未導入ならインストール可否を確認してからインストールする。同意しない場合は処理を終了する
-- レビュー結果は標準出力に表示し、特定のファイルへの保存は不要
+## Review the pull request whose number is specified in $ARGUMENTS (numbers only)
+- Use the gh command to retrieve pull request data.
+- If the gh command is unavailable, terminate the process as an error (Error message: `ghコマンドが見つかりません。処理を終了します。`)
+- Display all possible findings in the review result to standard output without omission (no need to save to a specific file).
